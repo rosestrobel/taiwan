@@ -1,0 +1,81 @@
+body {
+    background-color: #6B8E72;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    min-width: auto;
+}
+
+h2.route{
+     color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.navbar ul {
+    display: flex;
+
+}
+
+.navbar ul li {
+    list-style: none;
+    padding: 0em 3em;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li a:hover {
+    transition: 0.8s;
+    opacity: 0.6;
+}
+
+
+/* Meet the team */
+
+.image-gallery {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5em;
+    padding: 3em;
+    align-items: center;
+}
+
+.image-gallery img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Footer */
+
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    padding: 2em;
+}
+
+footer ul li a {
+    text-decoration: none;
+}
