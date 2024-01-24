@@ -1,0 +1,435 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    background-color: #7B909C;
+    align-items: center;
+    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    opacity: 0.9;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar h2 {
+    color: white;
+    display: flex;
+    padding: 0px 20px;
+}
+
+.navbar ul {
+    display: flex;
+    
+}
+
+.navbar ul li {
+    list-style: none;
+    padding: 0px 20px;
+    text-align: center;
+    
+
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Video container for background */
+
+.container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+}
+
+.container h1 {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: white;
+font-size: 4em;
+letter-spacing: 5px;
+text-shadow: #7392A4 5px 6px 5px;
+}
+
+.video-bg {
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    z-index: -1;
+}
+
+@media screen and (max-width: 430px) {
+    .container h1 {
+        font-size: 3em;
+    }
+    
+}
+
+@media screen and (max-width: 230px) {
+    .container h1 {
+        font-size: 1em;
+    }
+    
+}
+
+@media screen and (max-width: 305px) {
+    .container h1 {
+        font-size: 2em;
+    }
+    
+}
+
+/* Drone container */
+
+
+
+.drone-container { 
+    width: 100%;
+    min-height: 150vh;
+    position: relative;
+}
+
+.drone-text-footage-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.drone-container h1 {
+    margin-top: 6em;
+    font-size: 3em;
+    text-align: center;
+}
+
+.drone-text-footage-container p {
+    width: 55%;
+    padding: 2em 2em;
+    text-align: center;
+}
+
+.drone-footage-img {
+    width: 70%;
+    max-height: 25em;
+    border-radius: 20px;
+    z-index: -1;
+    position: relative;
+}
+
+.drone-button {
+    background: none;
+    border: solid 1px white;
+    color: white;
+    width: 15%;
+    height: 5%;
+    border-radius: 20px;
+    position: absolute;
+    left: 43%;
+    top: 55%;
+}
+
+
+.drone-button:hover {
+    transition: 0.5s;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (width: 375px) {
+    .drone-container h1 {
+        font-size: 2em;
+    }
+    
+    .drone-text-footage-container p {
+        width: 100%;
+    }
+    
+    .drone-footage-img {
+        width: 90%;
+        max-height: 40em;
+    }
+    .drone-button {
+        width: 30%;
+        height: 30px;
+        left: 35%;
+        top: 50%;
+    }
+}
+@media screen and (max-width: 414px) {
+    .drone-container {
+        display: flex;
+        min-height: 80vh;
+    }
+    .drone-container h1 {
+        font-size: 2em;
+    }
+    
+    .drone-text-footage-container p {
+        width: 100%;
+
+    }
+    
+    .drone-footage-img {
+        width: 90%;
+        max-height: 40em;
+    }
+    .drone-button {
+        width: 30%;
+        height: 30px;
+        left: 35%;
+        top: 36%;
+    }
+}
+@media screen and (max-width: 390px) {
+    .drone-container {
+        display: flex;
+        min-height: 80vh;
+    }
+
+    .drone-container h1 {
+        font-size: 2em;
+    }
+    
+    .drone-text-footage-container p {
+        width: 100%;
+        font-size: 80%;
+
+    }
+    
+    .drone-footage-img {
+        width: 90%;
+        max-height: 40em;
+    }
+    .drone-button {
+        width: 30%;
+        height: 30px;
+        left: 35%;
+        top: auto;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .drone-container {
+        min-height: 80vh;
+        display: flex;
+    }
+
+    .drone-container h1 {
+        font-size: 2em;
+    }
+    
+    .drone-text-footage-container p {
+        width: 100%;
+        font-size: 80%;
+
+    }
+    
+    .drone-footage-img {
+        width: 90%;
+        max-height: 40em;
+    }
+    .drone-button {
+        width: 30%;
+        height: 30px;
+        left: 35%;
+        top: 71%;
+    }
+}
+
+
+
+/* 
+@media screen and (max-width: 1013px){
+    .drone-button {
+     top: 60%;
+    }
+}
+
+@media screen and (max-width: 559px){
+    .drone-button {
+     top: 65%;
+    }
+}
+ */
+
+ /* Virtual tour */
+
+ .virtual-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    margin-bottom: 5em;
+}
+
+.virtual-container img {
+    width: 60%;
+    height: 100%;
+    border-radius: 30px;
+    z-index: -1;
+}
+
+.virtual-container h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.virtual-container p {
+    width: 60%;
+    padding: 1em 2em;
+}
+
+/* Explore taipei yourself */
+
+.explore-container {
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.explore-text {
+    display: flex;
+    font-size: 2em;
+    text-align: center;
+    flex-direction: column;
+}
+
+.explore-text button {
+    font-family: 'Noto Sans', sans-serif;
+    margin-top: 3em;
+    padding: 1.5em 7em;
+    background: none;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.explore-text button:hover {
+    transition: 0.6s;
+
+    transform: scale(1.02);
+    box-shadow: #60696e 2px 2px 8px;
+    cursor: pointer;
+}
+
+.img-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 50%;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+.grid-item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.grid-item img:hover {
+    transition: 1s;
+    transform: scale(1.03);
+    cursor: pointer;
+    box-shadow: #60696e 2px 2px 10px;
+}
+
+
+@media screen and (max-width: 780px){
+    .explore-text h1 {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .explore-container {
+        flex-direction: column;
+    }
+
+    .explore-text h1 {
+
+    }
+
+    .img-gallery {
+        margin: 30px;
+        grid-template-columns: 90vw;
+        justify-content: center;
+    }
+    .grid-item img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+    .explore-text button {
+        font-family: 'Noto Sans', sans-serif;
+        padding: 1em 6em;
+        background: none;
+        font-size: 15px;
+        border-radius: 5px;
+        margin: 2em 0px 2em 0px;
+    }
+}
+
+/* Information container */
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.information-container {
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.information-container h1 {
+    font-size: 3em;
+    letter-spacing: 10px;
+    z-index: 1;
+}
+
+.info-text button {
+    font-family: 'Noto Sans', sans-serif;
+    margin-top: 3em;
+    padding: 1.5em 7em;
+    background: none;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.info-text button:hover {
+    transition: 0.6s;
+
+    transform: scale(1.02);
+    box-shadow: #60696e 2px 2px 8px;
+    cursor: pointer;
+}
