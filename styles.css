@@ -106,8 +106,13 @@ text-shadow: #7392A4 5px 6px 5px;
 
 .drone-container { 
     width: 100%;
-    min-height: 150vh;
+    min-height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .drone-text-footage-container {
@@ -131,23 +136,26 @@ text-shadow: #7392A4 5px 6px 5px;
 }
 
 .drone-footage-img {
-    width: 70%;
+    width: 65em;
+    max-width: 70em;
     max-height: 25em;
     border-radius: 20px;
     z-index: -1;
     position: relative;
 }
 
+
+/*
 .drone-button {
     background: none;
     border: solid 1px white;
     color: white;
-    width: 15%;
+    width: 20%;
     height: 5%;
     border-radius: 20px;
     position: absolute;
-    left: 43%;
-    top: 55%;
+    left: 41%;
+    top: 70%;
 }
 
 
@@ -157,6 +165,7 @@ text-shadow: #7392A4 5px 6px 5px;
     color: black;
     cursor: pointer;
 }
+*/
 
 @media screen and (width: 375px) {
     .drone-container h1 {
@@ -283,7 +292,7 @@ text-shadow: #7392A4 5px 6px 5px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 100vh;
+    min-height: 150vh;
     margin-bottom: 5em;
 }
 
